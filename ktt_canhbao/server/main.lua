@@ -12,7 +12,7 @@ QBCore.Commands.Add('emergencyemail', 'Send emergency email to everyone', {{name
     else
         TriggerClientEvent('QBCore:Notify', source, 'Exceeds maximum characters!', 'error')
     end
-end, 'god')
+end, 'admin')
 
 -- Announcement Email
 QBCore.Commands.Add('announcementemail', 'Send announcement email to everyone', {{name = 'Email', help = 'Text of Email'}}, true, function(source, args)
@@ -23,14 +23,14 @@ QBCore.Commands.Add('announcementemail', 'Send announcement email to everyone', 
     else
         TriggerClientEvent('QBCore:Notify', source, 'Exceeds maximum characters!', 'error')
     end
-end, 'god')
+end, 'admin')
 
 -------------------- Manual Tsunami Email --------------------
 
 -- Manual 15 Minute Tsunami Warning
 QBCore.Commands.Add('tsunamimanual', '15 minute tsuanami warning', {}, true, function(source, args)
     TriggerClientEvent('strez:client:TsunamiManual', -1)
-end, 'god')
+end, 'admin')
 
 -------------------- Auto Restart Tsunami Email --------------------
 
