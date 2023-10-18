@@ -30,7 +30,7 @@ end)
 
 -- Manual Warning Email
 RegisterNetEvent('strez:client:TsunamiManual', function(text)
-    TriggerEvent('InteractSound_CL:PlayOnOne', 'Alert', 0.1)
+    TriggerEvent('InteractSound_CL:PlayOnOne', 'quandoi', 0.1)
     Wait(math.random(7000, 13000))
     TriggerServerEvent('qb-phone:server:sendNewMail', {
         sender = 'District of Los Santos',
@@ -71,7 +71,7 @@ end)
 
 -- 5 Minutes Reminder
 RegisterNetEvent('strez:client:SendMailTsunamiAuto5', function(text)
-    TriggerEvent('InteractSound_CL:PlayOnOne', 'Alert', 0.1)
+    TriggerEvent('InteractSound_CL:PlayOnOne', 'quandoi', 0.1)
     Wait(10000)
     TriggerServerEvent('qb-phone:server:sendNewMail', {
         sender = 'Los Santos Weather',
@@ -85,7 +85,7 @@ end)
 
 -- 1 Minutes Reminder
 RegisterNetEvent('strez:client:SendMailTsunamiAuto1', function(text)
-    TriggerEvent('InteractSound_CL:PlayOnOne', 'Alert', 0.1)
+    TriggerEvent('InteractSound_CL:PlayOnOne', 'quandoi', 0.1)
     Wait(10000)
     TriggerServerEvent('qb-phone:server:sendNewMail', {
         sender = 'Los Santos Weather',
