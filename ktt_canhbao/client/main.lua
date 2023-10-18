@@ -33,9 +33,9 @@ RegisterNetEvent('strez:client:TsunamiManual', function(text)
     TriggerEvent('InteractSound_CL:PlayOnOne', 'quandoi', 0.1)
     Wait(math.random(7000, 13000))
     TriggerServerEvent('qs-smartphone:server:sendNewMail', {
-        sender = 'District of Los Santos',
-        subject = 'Emergency Broadcast',
-        message = 'The National Weather Service has issued a TSUNAMI WARNING for Los Santos, In 15 minutes! Please start heading home or somewhere local for SAFETY!',
+        sender = 'Khu Tự Trị',
+        subject = 'Khẩn cấp',
+        message = 'Cơ quan Thời tiết Khu Tự Trị đã đưa ra CẢNH BÁO SÓNG THẦN sẽ đến trong 15 phút nữa! Hãy bắt đầu về nhà hoặc nơi nào đó ở địa phương để trú ẩn...!',
         button = {}
     })
     Wait(math.random(30000, 60000))
@@ -47,9 +47,9 @@ end)
 -- 30 Minutes Reminder
 RegisterNetEvent('strez:client:SendMailTsunamiAuto30', function(text)
     TriggerServerEvent('qs-smartphone:server:sendNewMail', {
-        sender = 'Los Santos Weather',
-        subject = 'Weather Forecast',
-        message = 'We\'re happy to report that we have clear skies dominating the forecast, and there is no rain expected in the foreseeable future.',
+        sender = 'Trạm khí tượng',
+        subject = 'Cảnh báo thời tiết',
+        message = 'Thông tin các cơn bão kèm sóng thần có thể sẽ đến trong 30p nữa...',
         button = {}
     })
     Wait(5000)
@@ -59,9 +59,9 @@ end)
 -- 15 Minutes Reminder
 RegisterNetEvent('strez:client:SendMailTsunamiAuto15', function(text)
     TriggerServerEvent('qs-smartphone:server:sendNewMail', {
-        sender = 'Los Santos Weather',
-        subject = 'Weather Update',
-        message = 'We apologize for the inaccurate forecasts earlier, and I understand your concern. It appears that the weather has taken an unexpected turn, and rain is now falling.',
+        sender = 'Trạm khí tượng',
+        subject = 'Cập nhật tin thời tiết',
+        message = 'Mưa đã bắt đầu rơi... trong vài phút nữa các khu vực trên Khu Tự Trị sẽ có gió và lốc xoáy...',
         button = {}
     })
     Wait(5000)
@@ -74,9 +74,9 @@ RegisterNetEvent('strez:client:SendMailTsunamiAuto5', function(text)
     TriggerEvent('InteractSound_CL:PlayOnOne', 'quandoi', 0.1)
     Wait(10000)
     TriggerServerEvent('qs-smartphone:server:sendNewMail', {
-        sender = 'Los Santos Weather',
-        subject = 'Emergency Weather',
-        message = 'This is an emergency weather update. A tsunami is predicted to make contact in less than 5 minutes. If you are in a coastal area, it is imperative to take immediate action to move to higher ground and seek safety. Please follow any official alerts, instructions, and evacuation orders issued by local authorities. Stay away from beaches and low-lying areas.',
+        sender = 'Trạm khí tượng',
+        subject = 'Cảnh báo',
+        message = 'Đây là bản cập nhật thời tiết khẩn cấp. Một cơn sóng thần được dự đoán sẽ ập đến trong vòng chưa đầy 5 phút nữa. Nếu đang ở khu vực ven biển, bạn cần phải hành động ngay lập tức để di chuyển lên vùng đất cao hơn và tìm kiếm sự an toàn. Vui lòng làm theo mọi cảnh báo, hướng dẫn và lệnh sơ tán chính thức do chính quyền địa phương ban hành. Tránh xa các bãi biển và khu vực trũng.',
         button = {}
     })
     Wait(5000)
@@ -88,9 +88,9 @@ RegisterNetEvent('strez:client:SendMailTsunamiAuto1', function(text)
     TriggerEvent('InteractSound_CL:PlayOnOne', 'quandoi', 0.1)
     Wait(10000)
     TriggerServerEvent('qs-smartphone:server:sendNewMail', {
-        sender = 'Los Santos Weather',
-        subject = 'Emergency Weather',
-        message = 'This is an emergency weather update. A tsunami is imminent. <br> <br> If you are in a coastal area, it is imperative to take immediate action to move to higher ground and seek safety. Please follow any official alerts, instructions, and evacuation orders issued by local authorities. Stay away from beaches and low-lying areas.',
+        sender = 'Trạm khí tượng',
+        subject = 'CẢNH BÁO NGHIÊM TRỌNG',
+        message = 'Đây là bản cập nhật thời tiết khẩn cấp. Một cơn sóng thần sắp xảy ra. <br> <br> Nếu đang ở khu vực ven biển, bạn cần phải hành động ngay lập tức để di chuyển lên vùng đất cao hơn và tìm kiếm sự an toàn. Vui lòng làm theo mọi cảnh báo, hướng dẫn và lệnh sơ tán chính thức do chính quyền địa phương ban hành. Tránh xa các bãi biển và khu vực trũng.',
         button = {}
     })
     Wait(5000)
