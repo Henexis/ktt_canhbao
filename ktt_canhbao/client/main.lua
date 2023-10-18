@@ -7,8 +7,8 @@ local QBCore = exports['qb-core']:GetCoreObject()
 RegisterNetEvent('strez:client:SendEmergencyEmail', function(text)
     Wait(math.random(7000, 13000))
     TriggerServerEvent('qs-smartphone:server:sendNewMail', {
-        sender = "City of Los Santos",
-        subject = "Emergency Alert",
+        sender = "Khu Tự Trị",
+        subject = "Báo Động",
         message = text,
         button = {}
     })
@@ -18,8 +18,8 @@ end)
 RegisterNetEvent('strez:client:SendAnnouncementEmail', function(text)
     Wait(math.random(7000, 13000))
     TriggerServerEvent('qs-smartphone:server:sendNewMail', {
-        sender = "City of Los Santos",
-        subject = "Announcement",
+        sender = "Khu Tự Trị",
+        subject = "Thông báo",
         message = text,
         button = {}
     })
